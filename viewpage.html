@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+       
+    </style>
+</head>
+
+<body id="app_body">
+    <div class="container">
+        <div id="map"></div>
+        
+        <div>
+            <h2>Add Location</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" />
+            </div>
+            <div class="form-group">
+                <label for="latitude">Latitude:</label>
+                <input type="number" id="latitude" step="any" />
+            </div>
+            <div class="form-group">
+                <label for="longitude">Longitude:</label>
+                <input type="number" id="longitude" step="any" />
+            </div>
+            <div class="form-group">
+                <label for="company">Company:</label>
+                <input type="text" id="company" />
+            </div>
+            <button onclick="AddLocation()">Add Location</button>
+            <div id="add" class="message"></div>
+        </div>
+      
+        <div>
+            <h2>Delete Location</h2>
+            <div class="form-group">
+                <label for="delete">Company Name:</label>
+                <input type="text" id="delete" />
+            </div>
+            <button class="delete" onclick="deleteLocation()">Delete Location</button>
+            <div id="delete" class="message"></div>
+        </div>
+       
+
+        <div>
+            <h2>Update Location</h2>
+            <div class="form-group">
+                <label for="update-id">Location ID:</label>
+                <input type="text" id="update-id" />
+            </div>
+            <div class="form-group">
+                <label for="update-name">Name:</label>
+                <input type="text" id="update-name" />
+            </div>
+            <div class="form-group">
+                <label for="update-address">Address:</label>
+                <input type="text" id="update-address" />
+            </div>
+            <div class="form-group">
+                <label for="update-phone">Phone:</label>
+                <input type="text" id="update-phone" />
+            </div>
+            <div class="form-group">
+                <label for="update-latitude">Latitude:</label>
+                <input type="number" id="update-latitude" step="any" />
+            </div>
+            <div class="form-group">
+                <label for="update-longitude">Longitude:</label>
+                <input type="number" id="update-longitude" step="any" />
+            </div>
+            <div class="form-group">
+                <label for="update-company">Company:</label>
+                <input type="text" id="update-company" />
+            </div>
+            <button onclick="updateLocation()">Update Location</button>
+            <div id="update-message" class="message"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="viewpage.js"></script>
+<script src="AddLocation.js"></script>
+
+</body>
+</html>
